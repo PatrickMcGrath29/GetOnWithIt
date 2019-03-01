@@ -5,6 +5,6 @@ A simple Chrome extension to speed up the process of logging into Northeastern U
 ## Installation Instructions
 
 - Download directory
-- Go to [Chrome Extensions](chrome://extensions)
+- Go to chrome://extensions
 - Click **Load unpacked**
 - And upload the directory
