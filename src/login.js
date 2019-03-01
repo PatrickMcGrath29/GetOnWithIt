@@ -1,12 +1,15 @@
 const submitLoginForm = () => {
-  const autocomplete =
-    document.querySelector("input#username").value.length > 0 &&
-    document.querySelector("input#password").value.length > 0;
+  const username = document.querySelector("input#username");
+  const password = document.querySelector("input#password");
 
-  if (autocomplete) {
+  if (
+    username &&
+    username.value.length > 0 &&
+    password &&
+    password.value.length > 0
+  ) {
     document.querySelector("input.btn-submit").click();
   }
 };
 
-document.addEventListener('DOMContentLoaded', submitLoginForm())
-
+document.addEventListener("DOMContentLoaded", submitLoginForm());
