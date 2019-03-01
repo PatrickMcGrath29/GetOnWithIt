@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "NortheasternSkipLoginPage",
+  "name": "GetOnWithIt",
   "description": "Skip the login page for Northeastern University websites, and auto-login where possible",
   "version": "0.1",
   "permissions": [
