@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "GetOnWithIt",
-  "description": "Skip the login page for Northeastern University websites, and auto-login where possible",
+  "description": "Skip the login page for Northeastern University websites",
   "version": "0.1",
   "permissions": [
     "activeTab"
@@ -16,15 +16,6 @@
       ],
       "js": [
         "src/goto-login.js"
-      ]
-    },
-    {
-      "matches": [
-        "*://www.neuidmsso.neu.edu/*",
-        "*://neuidmsso.neu.edu/*"
-      ],
-      "js": [
-        "src/login.js"
       ]
     }
   ]
