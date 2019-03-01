@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "NortheasternSkipLoginPage",
+  "description": "Skip the login page for Northeastern University websites, and auto-login where possible",
+  "version": "0.1",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.northeastern.blackboard.com/*",
+        "*://northeastern.blackboard.com/*",
+        "*://www.my.northeastern.edu/*",
+        "*://my.northeastern.edu/*"
+      ],
+      "js": [
+        "src/goto-login.js"
+      ]
+    },
+    {
+      "matches": [
+        "*://www.neuidmsso.neu.edu/*",
+        "*://neuidmsso.neu.edu/*"
+      ],
+      "js": [
+        "src/login.js"
+      ]
+    }
+  ]
+}
